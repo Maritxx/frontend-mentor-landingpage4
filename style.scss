@@ -7,35 +7,61 @@ body {
 
 
 .fourteenForty {
-    position: relative;
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
+	position: relative;
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
 }
 
 
 .twelveHundred {
-    position: relative;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+	position: relative;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 
 .tenEighty {
-    position: relative;
-    width: 100%;
-    max-width: 1080px;
-    margin: 0 auto;
+	position: relative;
+	width: 100%;
+	max-width: 1080px;
+	margin: 0 auto;
 }
 
 
 .nineSixty {
-    position: relative;
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
+	position: relative;
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
 }
+
+
+.pad {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+
+.button {
+	a {
+		display: block;
+		max-width: 250px;
+		margin: 0 auto;
+		padding: 10px 20px;
+		border-radius: 25px;
+	}
+
+	&__blue {
+		a {
+			background-color: var(--button-primary);
+			font-family: var(--heading-font);
+			font-weight: 700;
+		}
+	}
+}
+
 
 
 
@@ -49,6 +75,23 @@ h1, h2 {
 }
 
 
+.feature__heading {
+	font-family: var(--heading-font);
+	font-weight: 700;
+}
+
+
+.reviewer__name {
+	font-family: var(--heading-font);
+	font-weight: 700;
+	font-size: 0.75rem;
+	display: block;
+}
+
+
+.reviewer__occupation {
+	font-size: 0.625rem;
+}
 
 
 
@@ -56,6 +99,12 @@ h1, h2 {
 /*Header Styling*/
 header {
 	background-color: var(--box-primary);
+}
+
+
+.header-content__holder {
+	display: flex;
+	justify-content: space-between;
 }
 
 
@@ -69,10 +118,27 @@ header {
 	background-image: url(img/bg-curvy-mobile.svg);
 	background-position: bottom;
 	background-repeat: no-repeat;
+	background-size: 100% 30%;
 
 	@media all and (min-width: 782px) {
 		background-image: url(img/bg-curvy-desktop.svg);
 	}
+}
+
+
+.introduction-image__container {
+	img {
+		display: block;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+}
+
+
+.introduction-text__container {
+	text-align: center;
+	max-width: 500px;
+	margin: 0 auto;
 }
 
 
@@ -81,8 +147,56 @@ header {
 
 
 /*Features Section Styling*/
+.features-row__holder {
+	@media all and (min-width: 782px) {
+		display: flex;
+		justify-content: space-between;
+	}
 
 
+	.features-box__container {
+		text-align: center;
+
+		@media all and (min-width: 782px) {
+			flex: 0 1 40%;
+		}
+	}
+}
+
+
+
+
+
+
+/*Explanation Section*/
+.explanation-content__holder {
+	@media all and (min-width: 782px) {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+
+.explanation__container {
+	&--image {
+		@media all and (min-width: 782px) {
+			flex: 0 1 45%;
+		}
+
+		img {
+			max-width: 100%;
+			display: block;
+		}
+	}
+
+
+	&--text {
+		@media all and (min-width: 782px) {
+			flex: 0 1 45%;
+		}
+	}
+}
 
 
 
@@ -102,13 +216,36 @@ header {
 
 	.testimonials-box__container {
 		background-color: var(--box-secondary);
-		padding: 20px 10px;
+		padding: 40px 30px;
+		border-radius: 5px;
 
 		@media all and (min-width: 782px) {
 			flex: 0 1 30%;
 		}
+
+
+		p {
+			font-size: 0.875rem;
+		}
+
+
+		.testimonials-reviewer__holder {
+			display: flex;
+			align-items: center;
+
+			.reviewer-image__container {
+				margin-right: 10px;
+
+				img {
+					max-width: 30px;
+					display: block;
+					border-radius: 90px;
+				}
+			}
+		}
 	}
 }
+
 
 
 

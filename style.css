@@ -33,6 +33,24 @@ body {
   margin: 0 auto;
 }
 
+.pad {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.button a {
+  display: block;
+  max-width: 250px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+.button__blue a {
+  background-color: var(--button-primary);
+  font-family: var(--heading-font);
+  font-weight: 700;
+}
+
 /*Font Styling*/
 h1, h2 {
   font-size: 1.5rem;
@@ -40,9 +58,30 @@ h1, h2 {
   font-weight: 700;
 }
 
+.feature__heading {
+  font-family: var(--heading-font);
+  font-weight: 700;
+}
+
+.reviewer__name {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  font-size: 0.75rem;
+  display: block;
+}
+
+.reviewer__occupation {
+  font-size: 0.625rem;
+}
+
 /*Header Styling*/
 header {
   background-color: var(--box-primary);
+}
+
+.header-content__holder {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*Introduction Section Styling*/
@@ -51,6 +90,7 @@ header {
   background-image: url(img/bg-curvy-mobile.svg);
   background-position: bottom;
   background-repeat: no-repeat;
+  background-size: 100% 30%;
 }
 @media all and (min-width: 782px) {
   .introduction__section {
@@ -58,7 +98,58 @@ header {
   }
 }
 
+.introduction-image__container img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.introduction-text__container {
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
 /*Features Section Styling*/
+@media all and (min-width: 782px) {
+  .features-row__holder {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.features-row__holder .features-box__container {
+  text-align: center;
+}
+@media all and (min-width: 782px) {
+  .features-row__holder .features-box__container {
+    flex: 0 1 40%;
+  }
+}
+
+/*Explanation Section*/
+@media all and (min-width: 782px) {
+  .explanation-content__holder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media all and (min-width: 782px) {
+  .explanation__container--image {
+    flex: 0 1 45%;
+  }
+}
+.explanation__container--image img {
+  max-width: 100%;
+  display: block;
+}
+@media all and (min-width: 782px) {
+  .explanation__container--text {
+    flex: 0 1 45%;
+  }
+}
+
 /*Testimonials Section Styling*/
 .testimonials-content__holder {
   background-image: url("img/bg-quotes.png");
@@ -72,12 +163,28 @@ header {
 }
 .testimonials-content__holder .testimonials-box__container {
   background-color: var(--box-secondary);
-  padding: 20px 10px;
+  padding: 40px 30px;
+  border-radius: 5px;
 }
 @media all and (min-width: 782px) {
   .testimonials-content__holder .testimonials-box__container {
     flex: 0 1 30%;
   }
+}
+.testimonials-content__holder .testimonials-box__container p {
+  font-size: 0.875rem;
+}
+.testimonials-content__holder .testimonials-box__container .testimonials-reviewer__holder {
+  display: flex;
+  align-items: center;
+}
+.testimonials-content__holder .testimonials-box__container .testimonials-reviewer__holder .reviewer-image__container {
+  margin-right: 10px;
+}
+.testimonials-content__holder .testimonials-box__container .testimonials-reviewer__holder .reviewer-image__container img {
+  max-width: 30px;
+  display: block;
+  border-radius: 90px;
 }
 
 /*Sign-up Section Styling*/

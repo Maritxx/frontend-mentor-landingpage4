@@ -94,12 +94,46 @@ h1, h2 {
 }
 
 
+.mail__text {
+	font-size: 0.875rem;
+	display: block;
+
+	&::before {
+		content: url("img/icon-email.svg");
+		vertical-align: middle;
+		padding-right: 10px;
+	}
+}
+
+
+.phone__text {
+	font-size: 0.875rem;
+	display: block;
+
+	&::before {
+		content: url("img/icon-phone.svg");
+		vertical-align: middle;
+		padding-right: 10px;
+	}	
+}
+
+
+.location__text {
+	&::before {
+		content: url("img/icon-location.svg");
+		padding-right: 10px;	
+		vertical-align: top;	
+	}
+}
+
+
+
+
 
 
 /*Header Styling*/
 header {
 	background-color: var(--box-primary);
-	padding: 20px;
 }
 
 
@@ -107,11 +141,15 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 40px;
+	padding: 20px;
 
 	@media all and (max-width: 350px) {
 		flex-wrap: wrap;
-		align-item: center;
+		justify-content: center;
+	}
+
+	@media all and (min-width: 782px) {
+		padding: 60px;
 	}
 }
 
@@ -298,13 +336,52 @@ header {
 /*Footer Styling*/
 footer {
 	background-color: var(--bg-footer);
-	padding-top: 150px;
 }
 
 
-.footer-content__container {
+.footer-content__holder {
+	padding: 20px;
+	padding-top: 150px;
+
+	.footer-logo__container {
+		max-width: 130px;
+
+		img {
+			width: 100%;
+			min-width: 80px;
+			display: block;
+		}
+	}
+}
+
+
+.footer-information__container {
 	@media all and (min-width: 782px) {
 		display: flex;
+		justify-content: space-between;
+	}
+
+	.footer-contact__holder {
+		@media all and (min-width: 782px) {
+			flex: 0 1 45%;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		p {
+			@media all and (min-width: 782px) {
+				padding-right: 40px;
+			}
+		}
+	}
+
+
+	.footer-links__holder {
+		@media all and (min-width: 782px) {
+			flex: 0 1 45%;
+			display: flex;
+			justify-content: space-between;
+		}
 	}
 }
 

@@ -194,12 +194,13 @@ header {
   padding: 40px;
   background-color: var(--box-primary);
   border-radius: 5px;
-  bottom: 50%;
+  bottom: -75px;
 }
 
 /*Footer Styling*/
 footer {
   background-color: var(--bg-footer);
+  padding-top: 150px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -77,11 +77,36 @@ h1, h2 {
 /*Header Styling*/
 header {
   background-color: var(--box-primary);
+  padding: 20px;
 }
 
 .header-content__holder {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+@media all and (max-width: 350px) {
+  .header-content__holder {
+    flex-wrap: wrap;
+    align-item: center;
+  }
+}
+
+.header-navigation__holder ul {
+  display: flex;
+  min-width: 235px;
+}
+.header-navigation__holder ul li {
+  padding-left: 25px;
+}
+
+.header-logo__container {
+  max-width: 130px;
+}
+.header-logo__container img {
+  max-width: 100%;
+  min-width: 80px;
 }
 
 /*Introduction Section Styling*/
@@ -201,6 +226,12 @@ header {
 footer {
   background-color: var(--bg-footer);
   padding-top: 150px;
+}
+
+@media all and (min-width: 782px) {
+  .footer-content__container {
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

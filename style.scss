@@ -99,12 +99,42 @@ h1, h2 {
 /*Header Styling*/
 header {
 	background-color: var(--box-primary);
+	padding: 20px;
 }
 
 
 .header-content__holder {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+	padding: 40px;
+
+	@media all and (max-width: 350px) {
+		flex-wrap: wrap;
+		align-item: center;
+	}
+}
+
+
+.header-navigation__holder {
+	ul {
+		display: flex;
+		min-width: 235px;
+
+		li {
+			padding-left: 25px;
+		}
+	}
+}
+
+
+.header-logo__container {
+	max-width: 130px;
+
+	img {
+		max-width: 100%;
+		min-width: 80px;
+	}
 }
 
 
@@ -271,6 +301,12 @@ footer {
 	padding-top: 150px;
 }
 
+
+.footer-content__container {
+	@media all and (min-width: 782px) {
+		display: flex;
+	}
+}
 
 
 

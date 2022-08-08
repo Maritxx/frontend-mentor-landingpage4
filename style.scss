@@ -97,6 +97,7 @@ h1, h2 {
 .mail__text {
 	font-size: 0.875rem;
 	display: block;
+	min-width: 155px;
 
 	&::before {
 		content: url("img/icon-email.svg");
@@ -109,6 +110,7 @@ h1, h2 {
 .phone__text {
 	font-size: 0.875rem;
 	display: block;
+	min-width: 155px;
 
 	&::before {
 		content: url("img/icon-phone.svg");
@@ -119,10 +121,11 @@ h1, h2 {
 
 
 .location__text {
+	display: flex;
+
 	&::before {
 		content: url("img/icon-location.svg");
 		padding-right: 10px;	
-		vertical-align: top;	
 	}
 }
 
@@ -323,11 +326,51 @@ header {
 
 /*Sign-up Section Styling*/
 .sign-up-content__holder {
-	padding: 40px;
+	padding: 20px;
 	background-color: var(--box-primary);
 	border-radius: 5px;
-	bottom: -75px;
+	margin-bottom: -75px;
+	margin-top: 75px;
+	text-align: center;
+
+	@media all and (min-width: 782px) {
+		padding: 40px;
+	}
+
+
+	.input__holder {
+		@media all and (min-width: 782px) {
+			display: flex;
+		}
+
+		input {
+			width: 100%;
+			padding: 0px 30px;
+			border: unset;
+
+			@media all and (min-width: 782px) {
+				margin-right: 40px;
+			}
+			
+		}
+
+		button {
+			width: 100%;
+			padding: 10px 20px;
+			border-radius: 25px;
+			font-size: 0.875rem;
+			font-family: var(--heading-font);
+			font-weight: 700;
+			color: var(--text-primary);
+			background-color: var(--button-primary);
+
+			@media all and (min-width: 782px) {
+				max-width: 175px;
+			}
+		}
+	}
 }
+
 
 
 
@@ -336,12 +379,12 @@ header {
 /*Footer Styling*/
 footer {
 	background-color: var(--bg-footer);
+	padding-top: 150px;
 }
 
 
 .footer-content__holder {
 	padding: 20px;
-	padding-top: 150px;
 
 	.footer-logo__container {
 		max-width: 130px;

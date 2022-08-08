@@ -29,3 +29,17 @@ $(window).on("load resize orientationchange", function () {
 
 
 
+
+
+$("button#signupButton").click(function () {
+	var input = $("input#email").val();
+	var email = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+
+	if input.match(email) {
+		$("span#invalidSubmit").text("");
+	}
+
+	else {
+
+	}
+})

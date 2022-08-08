@@ -26,3 +26,6 @@ $(window).on("load resize orientationchange", function () {
 //The .on action attaches one or more event handlers to the selected element.
 //The function within the .on action specifies that it needs a function to run.
 //Runs the pageHeight function when the page gets loaded, resized or if the orientation (portrait or landscape) is changed. 
+
+
+

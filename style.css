@@ -112,6 +112,7 @@ h1, h2 {
   color: var(--button-error);
   text-align: left;
   padding-left: 30px;
+  padding-top: 10px;
 }
 
 /*Header Styling*/
@@ -185,7 +186,7 @@ header {
 
 /*Features Section Styling*/
 .features__section {
-  padding: 75px 0px;
+  padding: 50px 0px;
 }
 
 @media all and (min-width: 782px) {

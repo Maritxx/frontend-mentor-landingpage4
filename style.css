@@ -104,6 +104,11 @@ h1, h2 {
   padding-right: 10px;
 }
 
+#invalidSubmit {
+  font-size: 0.75rem;
+  color: var(--button-error);
+}
+
 /*Header Styling*/
 header {
   background-color: var(--box-primary);
@@ -271,6 +276,7 @@ header {
   width: 100%;
   padding: 0px 30px;
   border: unset;
+  border-radius: 25px;
 }
 @media all and (min-width: 782px) {
   .sign-up-content__holder .input__holder input {

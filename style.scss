@@ -130,6 +130,13 @@ h1, h2 {
 }
 
 
+#invalidSubmit {
+	font-size: 0.75rem;
+	color: var(--button-error);
+	
+}
+
+
 
 
 
@@ -347,6 +354,7 @@ header {
 			width: 100%;
 			padding: 0px 30px;
 			border: unset;
+			border-radius: 25px;
 
 			@media all and (min-width: 782px) {
 				margin-right: 40px;

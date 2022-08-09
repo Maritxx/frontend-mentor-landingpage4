@@ -58,6 +58,10 @@ body {
 			background-color: var(--button-primary);
 			font-family: var(--heading-font);
 			font-weight: 700;
+
+			&:hover {
+				background-color: var(--button-hover);
+			}
 		}
 	}
 }
@@ -142,6 +146,21 @@ h1, h2 {
 }
 
 
+.explanation__link {
+	color: var(--button-primary);
+	text-decoration: underline;
+
+	&::after {
+		content: url("img/icon-arrow.svg");
+		padding-left: 3px;
+	}
+
+	&:hover {
+		color: var(--text-primary);
+	}
+}
+
+
 
 
 
@@ -176,6 +195,11 @@ header {
 
 		li {
 			padding-left: 25px;
+
+			a:hover {
+				font-weight: 700;
+				text-decoration: underline;
+			}
 		}
 	}
 }
@@ -264,7 +288,7 @@ header {
 
 /*Explanation Section*/
 .explanation__section {
-	padding: 75px 0px;
+	padding: 50px 0px;
 }
 
 
@@ -411,6 +435,10 @@ header {
 			@media all and (min-width: 782px) {
 				max-width: 175px;
 			}
+
+			&:hover {
+				background-color: var(--button-hover);
+			}
 		}
 	}
 }
@@ -482,12 +510,29 @@ footer {
 			ul {
 				li {
 					line-height: 2.5;
+
+					a:hover {
+						font-weight: 700;
+					}
 				}
 			}
 		}
 
 		.footer-socials__container {
 			text-align: center;
+
+			a {
+				font-size: 1.5rem;
+				padding: 5px 10px;
+				border: 1px solid var(--text-primary);
+				border-radius: 45px;
+
+				&:hover {
+					i {
+						color: var(--button-hover);
+					}
+				}
+			}
 		}
 	}
 }

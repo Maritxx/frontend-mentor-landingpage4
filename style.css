@@ -50,6 +50,9 @@ body {
   font-family: var(--heading-font);
   font-weight: 700;
 }
+.button__blue a:hover {
+  background-color: var(--button-hover);
+}
 
 /*Font Styling*/
 h1, h2 {
@@ -115,6 +118,18 @@ h1, h2 {
   padding-top: 10px;
 }
 
+.explanation__link {
+  color: var(--button-primary);
+  text-decoration: underline;
+}
+.explanation__link::after {
+  content: url("img/icon-arrow.svg");
+  padding-left: 3px;
+}
+.explanation__link:hover {
+  color: var(--text-primary);
+}
+
 /*Header Styling*/
 header {
   background-color: var(--box-primary);
@@ -144,6 +159,10 @@ header {
 }
 .header-navigation__holder ul li {
   padding-left: 25px;
+}
+.header-navigation__holder ul li a:hover {
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 .header-logo__container {
@@ -207,7 +226,7 @@ header {
 
 /*Explanation Section*/
 .explanation__section {
-  padding: 75px 0px;
+  padding: 50px 0px;
 }
 
 @media all and (min-width: 782px) {
@@ -329,6 +348,9 @@ header {
     max-width: 175px;
   }
 }
+.sign-up-content__holder .input__holder button:hover {
+  background-color: var(--button-hover);
+}
 
 /*Footer Styling*/
 footer {
@@ -386,8 +408,20 @@ footer {
 .footer-information__container .footer-links__holder .footer-links__container ul li {
   line-height: 2.5;
 }
+.footer-information__container .footer-links__holder .footer-links__container ul li a:hover {
+  font-weight: 700;
+}
 .footer-information__container .footer-links__holder .footer-socials__container {
   text-align: center;
+}
+.footer-information__container .footer-links__holder .footer-socials__container a {
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  border: 1px solid var(--text-primary);
+  border-radius: 45px;
+}
+.footer-information__container .footer-links__holder .footer-socials__container a:hover i {
+  color: var(--button-hover);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -32,6 +32,12 @@ $(window).on("load resize orientationchange", function () {
 
 
 $("button#signupButton").click(function () {
+	validate();
+});
+
+
+
+function validate() {
 	var input = $("input#email").val();
 	var email = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
@@ -40,6 +46,9 @@ $("button#signupButton").click(function () {
 	}
 
 	else {
-
+		$("span#invalidSubmit").text("Please input a valid email");
 	}
-})
+
+	console.log("input");
+	console.log("this function is working")	
+}
